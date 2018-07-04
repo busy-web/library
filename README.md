@@ -18,7 +18,7 @@ This is the core busy-web primitive tools
 #### [@busy-web/utils](https://github.com/busy-web/library/tree/master/packages/utils)
 Utility tools commonly used in all projects
 
-#### @busy-web/components
+#### [@busy-web/components](https://github.com/busy-web/library/tree/master/packages/components)
 Component library written for emberjs
 
 Contribute

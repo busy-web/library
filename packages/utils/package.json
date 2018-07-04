@@ -2,7 +2,7 @@
   "name": "@busy-web/utils",
   "version": "3.0.0",
   "description": "@busy-web util methods",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "author": "busy inc.",
   "license": "MIT",
   "keywords": [
@@ -18,7 +18,6 @@
     "setup": "make install"
   },
   "dependencies": {
-    "ember-uuid": "git+https://github.com/busy-web/ember-uuid.git#v1.1.0",
     "moment": "^2.22.2"
   },
   "devDependencies": {

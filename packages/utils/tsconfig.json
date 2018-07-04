@@ -6,10 +6,10 @@
 		"declaration": true,
     "inlineSourceMap": true,
     "inlineSources": true,
-    "baseUrl": ".",
     "allowJs": false,
 		"newLine": "LF",
     "allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
@@ -21,11 +21,12 @@
     "noImplicitReturns": true,
     "noEmitOnError": false,
     "noEmit": false,
+    "baseUrl": ".",
 		"outDir": "dist",
-		"types": ["jest", "moment"],
+		"types": ["moment", "jest"],
     "paths": {
-			"@app/*": ["src/*"],
-			"@test/*": ["tests/*"],
+			"@src/*": ["src/*"],
+			"@test/*": ["test/*"],
 			"*": ["node_modules/*"]
 		}
   },

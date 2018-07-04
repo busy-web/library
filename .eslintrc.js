@@ -1,14 +1,17 @@
 module.exports = {
-	root: true,
-	parser: 'typescript-eslint-parser',
+  root: true,
   parserOptions: {
-    ecmaVersion: 'es2017',
+    ecmaVersion: 2017,
     sourceType: 'module'
   },
-	plugins: [ 'typescript' ],
-  extends: [ ],
+  extends: 'eslint:recommended',
   env: {
-		browser: true
+		node: true
   },
-  rules: { }
+	globals: { 
+		loader: true
+	},
+  rules: {
+		//'no-console': 0
+	}
 };

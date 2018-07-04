@@ -1,0 +1,23 @@
+{
+	"typescript": {
+		"compilerOptions": {
+			"baseUrl": ".",
+			"outDir": "dist",
+			"types": ["jest", "moment"],
+			"paths": {
+				"@app/*": ["src/*"],
+				"@test/*": ["tests/*"],
+				"*": ["node_modules/*"]
+			}
+		},
+
+		"includes": [ "src/**/*.ts" ],
+
+		"test": {
+			"include": [
+				"src/**/*.ts",
+				"tests/**/*.ts"
+			]
+		}
+	}
+}

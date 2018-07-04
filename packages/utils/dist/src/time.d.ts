@@ -1,7 +1,3 @@
-/**
- * @module Utils
- *
- */
 import moment from 'moment';
 /**
  * `Util/Time`

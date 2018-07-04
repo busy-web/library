@@ -2,9 +2,9 @@
  * jest typescript test runner
  *
  */
-const conf = require('../../jest.config.js');
+const conf = require('../../jest.config.js')
 
-module.exports = Object.assign({}, conf, {
+module.exports = conf(__dirname, {
 	runner: 'jest-runner-tsc',
 	displayName: "TSC: utils",
 });

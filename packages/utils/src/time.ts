@@ -2,8 +2,8 @@
  * @module Utils
  *
  */
+import { timeZoneString } from '@src/time-zones';
 import moment from 'moment';
-import { timeZoneString } from '@app/time-zones';
 
 /**
  * `Util/Time`

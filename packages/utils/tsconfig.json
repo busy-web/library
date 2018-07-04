@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "umd",
+    "moduleResolution": "node",
+		"declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "baseUrl": ".",
+    "allowJs": false,
+		"newLine": "LF",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": false,
+    "noEmit": false,
+		"outDir": "dist",
+		"types": ["jest", "moment"],
+    "paths": {
+			"@app/*": ["src/*"],
+			"@test/*": ["tests/*"],
+			"*": ["node_modules/*"]
+		}
+  },
+	"files": [ "src/index.ts" ]
+}

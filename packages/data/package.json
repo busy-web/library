@@ -1,14 +1,14 @@
 {
-  "name": "@busy-web/utils",
-  "version": "3.0.0",
-  "description": "@busy-web util methods",
-  "main": "dist/index.js",
+  "name": "@busy-web/data",
+  "version": "0.0.1",
+  "description": "busy-web data model tools",
+  "main": "index.js",
   "author": "busy inc.",
   "license": "MIT",
   "keywords": [
     "busy-web",
     "@busy-web",
-    "@busy-web/utils"
+    "@busy-web/data"
   ],
   "scripts": {
     "serve": "make serve",
@@ -16,12 +16,8 @@
     "test": "make test",
     "setup": "make install"
   },
-  "dependencies": {
-    "moment": "^2.22.2"
-  },
   "devDependencies": {
     "@types/jest": "^23.1.4",
-    "@types/moment": "^2.13.0",
     "babel-core": "^6.26.3",
     "eslint-plugin-typescript": "^0.12.0",
     "jest": "^23.2.0",

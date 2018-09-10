@@ -29,14 +29,7 @@ export const log = (...args: any[]) => (
 	callMethod('log', args)
 );
 
-export const assert = (message: string, test: boolean) => {
-	__assert(typeof message === 'string', 'assert requires a string value `message` as the first param');
-	__assert(typeof test === 'boolean', 'assert requires a boolean value `test` as the second param');
-
-	__assert(test, message)
-};
-
-const __assert = (test: any, message: any) => (
+export const assert = (message: string, test: boolean) => (
 	callMethod('assert', [ test, message ])
 );
 

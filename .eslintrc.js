@@ -4,11 +4,12 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
+	excludeFiles: "*.ts",
   extends: 'eslint:recommended',
   env: {
 		node: true
   },
-	globals: { 
+	globals: {
 		loader: true
 	},
   rules: {

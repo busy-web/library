@@ -2,7 +2,7 @@
  * @module Utils
  *
  */
-import { timeZoneString } from '@src/time-zones';
+import { timeZoneString } from './time-zones';
 import moment from 'moment';
 
 /**
@@ -54,6 +54,15 @@ export default class Time {
 		}
 	}
 
+	public static now() {
+		return this.date();
+	}
+
+	public static utcTimestamp() {
+		const time = this.timestamp();
+		return time - this.timezone(time);
+	}
+
 	public static timezoneString(offset: number, isDST: boolean): string | undefined {
 		return timeZoneString(offset.toString(), isDST);
 	}
@@ -97,7 +106,7 @@ export function convertSeconds(seconds: number, toFixed: number = 2): IObjectT {
 	* @param format {number} 10 for 00:00 and 20 for 0.00 formats
 	* @return {object} An object with the hours, minutes, and seconds
 	*/
-export function convertSecondsStrin(
+export function convertSecondsString(
 	seconds: number,
 	format: number = 10,
 	padHours: boolean = false,

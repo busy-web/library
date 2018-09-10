@@ -14,6 +14,8 @@ export default class Time {
     static timestamp(timestamp?: number): number;
     static date(timestamp?: number): moment.Moment;
     static isDST(timestamp?: number): boolean;
+    static now(): moment.Moment;
+    static utcTimestamp(): number;
     static timezoneString(offset: number, isDST: boolean): string | undefined;
 }
 export interface IObjectT {
@@ -36,4 +38,4 @@ export declare function convertSeconds(seconds: number, toFixed?: number): IObje
     * @param format {number} 10 for 00:00 and 20 for 0.00 formats
     * @return {object} An object with the hours, minutes, and seconds
     */
-export declare function convertSecondsStrin(seconds: number, format?: number, padHours?: boolean, showSeconds?: boolean, longFormat?: boolean, toFixed?: number): {};
+export declare function convertSecondsString(seconds: number, format?: number, padHours?: boolean, showSeconds?: boolean, longFormat?: boolean, toFixed?: number): {};

@@ -8,9 +8,9 @@ export default class Currency {
 		return sortByCode(CURRENCY_CODES).map((cc: ICurCode): string => cc.code);
 	}
 
-	public static code(code: string): string | undefined {
+	public static code(code: string): ICurCode | undefined {
 		code = code.toUpperCase();
-		return this.codes().find((cc: string): boolean => cc === code);
+		return sortByCode(CURRENCY_CODES).find((cc: ICurCode): boolean => cc.code === code);
 	}
 
 	public static country(name: string): ICurCode[] {

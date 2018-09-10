@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "umd",
+    "module": "commonjs",
     "moduleResolution": "node",
 		"declaration": true,
     "inlineSourceMap": true,
@@ -30,5 +30,5 @@
 			"*": ["node_modules/*"]
 		}
   },
-	"files": [ "src/index.ts" ]
+	"include": [ "src/**/*.ts" ]
 }

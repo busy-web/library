@@ -3,6 +3,7 @@
   "version": "3.0.1-beta.1",
   "description": "@busy-web util methods",
   "main": "dist/index.js",
+	"files": ["dist/"],
   "author": "busy inc.",
   "license": "MIT",
   "keywords": [

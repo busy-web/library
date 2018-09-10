@@ -4,7 +4,7 @@
  */
 export default class Currency {
     static codes(): string[];
-    static code(code: string): string | undefined;
+    static code(code: string): ICurCode | undefined;
     static country(name: string): ICurCode[];
     static number(num: number | string): ICurCode | undefined;
     static countries(): string[];

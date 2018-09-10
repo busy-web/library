@@ -20,3 +20,4 @@
  * @returns {string}
  */
 export default function uuid(): string;
+export declare function isValidUUID(id: string): boolean;

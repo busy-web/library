@@ -4,10 +4,16 @@
 Installation
 ------------------------------------------------------------------------------
 
-Install this addon using ember-cli
+Install this addon using yarn
 ```
-ember install @busy-web/utils
+yarn add @busy-web/utils
 ```
+
+Install this addon using npm
+```
+npm install --save @busy-web/utils
+```
+
 
 Usage
 ------------------------------------------------------------------------------
